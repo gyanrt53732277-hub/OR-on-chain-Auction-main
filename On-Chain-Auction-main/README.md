@@ -3,7 +3,7 @@
 [![Stellar](https://img.shields.io/badge/Network-Stellar-blue?style=for-the-badge&logo=stellar)](https://stellar.org)
 [![Soroban](https://img.shields.io/badge/Standard-Soroban-green?style=for-the-badge&logo=rust)](https://soroban.stellar.org)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
-[![CI/CD Status](https://img.shields.io/github/actions/workflow/status/ankush-shaw/On-Chain-Auction/ci.yml?branch=main&style=for-the-badge&label=Build%20%26%20Test)](https://github.com/ankush-shaw/On-Chain-Auction/actions)
+[![CI/CD Status](https://img.shields.io/github/actions/workflow/status/ankush-shaw/On-Chain-Auction/ci.yml?branch=main&style=for-the-badge&label=Build%20%26%20Test)](https://github.com/ankush-shaw/On-Chain-Auction/actions) 
 
 A decentralized, on-chain project bidding and auction platform built on **Stellar Soroban**. Project managers list project opportunities directly to the blockchain, and public bidders submit trustless XLM-backed bids in real-time. The smart contract holds the active highest bid, refunds the previous bidder instantly and automatically, and securely transfers the winning bid to the seller upon auction settlement.
 
