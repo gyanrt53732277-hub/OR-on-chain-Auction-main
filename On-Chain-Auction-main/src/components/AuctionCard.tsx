@@ -3,6 +3,7 @@ import { Clock, Gavel, Loader2, Trophy, Wallet } from 'lucide-react';
 import type { AuctionListing } from '../types';
 import { formatStroops } from '../services/soroban';
 
+
 interface AuctionCardProps {
   auction: AuctionListing;
   walletAddress: string | null;
