@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-cream-100 text-slate-900 font-sans dark:bg-slate-950 dark:text-slate-100;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply rounded-lg border border-cream-300 bg-cream-50/80 dark:border-slate-800 dark:bg-slate-950/80;
+  }
+
+  .btn-primary {
+    @apply flex items-center gap-2 rounded-md bg-cyan-600 px-5 py-3 text-sm font-semibold text-white
+           transition-all duration-200 hover:bg-cyan-700
+           disabled:cursor-not-allowed disabled:opacity-50
+           dark:bg-cyan-500 dark:text-slate-950 dark:hover:bg-cyan-300;
+  }
+
+  .btn-ghost {
+    @apply flex items-center gap-2 rounded-md border border-cream-300 bg-cream-50 px-4 py-3
+           text-sm font-medium text-slate-700
+           transition-all duration-200 hover:border-cream-400 hover:bg-cream-200
+           disabled:cursor-not-allowed disabled:opacity-50
+           dark:border-slate-700 dark:bg-slate-900 dark:text-slate-200
+           dark:hover:border-slate-500 dark:hover:bg-slate-800;
+  }
+
+  .stable-button {
+    min-height: 44px;
+    white-space: nowrap;
+  }
+
+  .metric {
+    @apply rounded-lg border border-cream-300 bg-cream-50 p-3 sm:p-4
+           dark:border-slate-800 dark:bg-slate-900;
+  }
+
+  .metric p {
+    @apply text-xl sm:text-2xl font-black text-slate-900 dark:text-white;
+  }
+
+  .metric span {
+    @apply mt-1 block text-xs font-semibold uppercase tracking-wide text-slate-500;
+  }
+
+  .status-dot {
+    @apply h-2.5 w-2.5 rounded-full;
+  }
+
+  .status-dot.live {
+    @apply bg-emerald-400 shadow-[0_0_16px_rgba(52,211,153,0.8)];
+  }
+
+  .status-dot.ended {
+    @apply bg-amber-400;
+  }
+
+  .status-dot.settled {
+    @apply bg-slate-400 dark:bg-slate-500;
+  }
+}
